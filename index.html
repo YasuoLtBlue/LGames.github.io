@@ -6,6 +6,9 @@
 		</title>
 	</head>
 	<body style="background-color:#1a53ff">
+	<audio autoplay>
+	<source src="PageLoad.mp3" type="audio/mpeg">
+	</audio>
 	<div style="width:1366px;height:100px;background-color:#9900ff;margin:auto;border-style:solid;border-width:3px">
 	<center>
 	<h1>Un joc Clicker facut de Dreivan Mein</h1>
@@ -23,12 +26,18 @@
 <script>
 var bani = 0;
 var bPS =250;
-
+var bleep = new Audio();
+bleep.src = 'Yazuo.mp3';
+var nani = new Audio();
+nani.src = 'UpgradeButton.mp3';
 function adaugaresuma(){
+bleep.play();
 bani= bani + bPS;
+
 }
 function cumpara(){
 if(bani>=10000)
+nani.play();
 bani=bani-10000;
 bPS=bPS+250;
 }
