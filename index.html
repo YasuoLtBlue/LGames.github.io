@@ -15,21 +15,36 @@
 	<center>
 	<div style="background-color:#42f4b6;width:300px;height:auto;border-style:solid;border-width:5px;margin:1px">
 	<br><br>
+	
 	<img src="https://championmasterylookup.derpthemeus.com/img/masteryIcon.png" ><br>
-	<img src="https://media-minecraftforum.cursecdn.com/avatars/591/59/635727686195405410.png" ><br><p>Money:</p><p id="money">0</p><br>
-	<button onclick="adaugaresuma()" color="#9b41f4" >Farmeaza YazuoMeinz</button><br><br><button onclick="cumpara()">250Click | 20000 Gold</button><br><br> Mario de la Giesa&copy;
+	<img src="https://media-minecraftforum.cursecdn.com/avatars/591/59/635727686195405410.png" border="1" ><br><p>Money:</p><p id="money">0</p><br>
+	<img src="FarmButton.png"  onclick="adaugaresuma()"><br><br>
+	
+	<div id="shop" style="display:flex;width:198px">
+	
+	<div>
+	<img src="https://vignette.wikia.nocookie.net/leagueoflegends/images/1/15/Infinity_Edge_item.png/revision/latest?cb=20180531105945"  border="3">
 	</div>
+	<div  style="width:126px;height:33px;margin-left:5px;">
+	<img src="BuyButton4.png" onclick="haifha()">
+	<p style="color:#101010"><b>Cost:3700</b></p>
+	</div>
+	
+	</div>
+	
+	<br><br> Mario de la Giesa&copy;
+	
 </center>
 
-<script>
+<script type="text/javascript">
 var PageStart = new Audio();
 PageStart.src = 'PageLoad.mp3';
 
 var bani = 0;
-var bPS =250;
-if(bani==0){
+var bPS =9;
+if(bani>=0){
 PageStart.play();
-}
+};
 var bleep = new Audio();
 bleep.src = 'Yazuo.mp3';
 var nani = new Audio();
@@ -38,16 +53,16 @@ function adaugaresuma(){
 bleep.play();
 bani= bani + bPS;
 
-}
-function cumpara(){
-if(bani>=20000){
+};
+function haifha(){
+if(bani>=3700){
 nani.play();
-bani=bani-20000;
-bPS=bPS+250;}
-}
+bani=bani-3700;
+bPS=bPS+16;}
+};
 var myVar = setInterval(functie, 200)
 	function functie(){
-		document.getElementById("money").innerHTML = bani;}
+		document.getElementById("money").innerHTML = bani;};
 		
 </script>
 
