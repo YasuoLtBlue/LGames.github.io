@@ -6,9 +6,7 @@
 		</title>
 	</head>
 	<body style="background-color:#1a53ff">
-	<audio autoplay>
-	<source src="PageLoad.mp3" type="audio/mpeg">
-	</audio>
+	
 	<div style="width:1366px;height:100px;background-color:#9900ff;margin:auto;border-style:solid;border-width:3px">
 	<center>
 	<h1>Un joc Clicker facut de Dreivan Mein</h1>
@@ -19,13 +17,19 @@
 	<br><br>
 	<img src="https://championmasterylookup.derpthemeus.com/img/masteryIcon.png" ><br>
 	<img src="https://media-minecraftforum.cursecdn.com/avatars/591/59/635727686195405410.png" ><br><p>Money:</p><p id="money">0</p><br>
-	<button onclick="adaugaresuma()" color="#9b41f4" >Farmeaza YazuoMeinz</button><br><br><button onclick="cumpara()">250Click | 10000 Gold</button><br><br> Mario de la Giesa&copy;
+	<button onclick="adaugaresuma()" color="#9b41f4" >Farmeaza YazuoMeinz</button><br><br><button onclick="cumpara()">250Click | 20000 Gold</button><br><br> Mario de la Giesa&copy;
 	</div>
 </center>
 
 <script>
+var PageStart = new Audio();
+PageStart.src = 'PageLoad.mp3';
+
 var bani = 0;
 var bPS =250;
+if(bani==0){
+PageStart.play();
+}
 var bleep = new Audio();
 bleep.src = 'Yazuo.mp3';
 var nani = new Audio();
@@ -36,10 +40,10 @@ bani= bani + bPS;
 
 }
 function cumpara(){
-if(bani>=10000)
+if(bani>=20000){
 nani.play();
-bani=bani-10000;
-bPS=bPS+250;
+bani=bani-20000;
+bPS=bPS+250;}
 }
 var myVar = setInterval(functie, 200)
 	function functie(){
