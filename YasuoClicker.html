@@ -1,0 +1,114 @@
+﻿<!doctype html>
+<html>
+	<head>
+		<title>
+				Yasuo Clicker
+		</title>
+		
+	</head>
+	<body style="background-color:#1a53ff">
+	
+	<div style="width:1366px;height:100px;background-color:#9900ff;margin:auto;border-style:solid;border-width:3px">
+	<center>
+	<h1>Un joc clicker facut de Draven Main/<br>A clicker game made by draven main.</h1>
+	</center>
+	</div>
+	<center>
+	<div style="background-color:#42f4b6;width:300px;height:auto;border-style:solid;border-width:5px;margin:1px">
+	<br><br>
+	
+	<img src="https://championmasterylookup.derpthemeus.com/img/masteryIcon.png" ><br>
+	<img src="https://media-minecraftforum.cursecdn.com/avatars/591/59/635727686195405410.png" border="1" ><br><p id="Manimhei"><b>Money:</b></p><p id="money"><b>0</b></p><br>
+	<img src="FarmButton.png" style="cursor:pointer" title="Farm some gold boi" onclick="adaugaresuma();"><br><br>
+	
+	<div style="display:flex;width:198px;">
+	
+	<div>
+	<img src="https://vignette.wikia.nocookie.net/leagueoflegends/images/1/15/Infinity_Edge_item.png/revision/latest?cb=20180531105945" style="width:100%;" title="Infinity Edge boi" border="3">
+	</div>
+	<div  style="width:126px;height:33px;margin-left:5px;">
+	<img src="BuyButton4.png" style="cursor:pointer" title="Buy some items boi" onclick="haifha()">
+	<p style="color:#101010"><b>Cost:3700</b></p>
+	</div>
+	
+	</div>
+	
+	<br><a href="index2.html"><b>Mario de la Giesa&copy;</b>
+	
+</center>
+
+<script type="text/javascript">
+var PageStart = new Audio();
+PageStart.src = 'PageLoad.mp3';
+
+var bani = 0;
+var bPS =9;
+if(bani>=0){
+PageStart.play();
+};
+var repetare=0;
+var Farm2 = new Audio();
+var Farm3 = new Audio();
+var Farm4 = new Audio();
+var Special = new Audio();
+var Farm5 = new Audio();
+var Farm6 = new Audio();
+var Farm7 = new Audio();
+Farm5.src = 'Farm5.mp3';
+Farm6.src = 'Farm6.mp3';
+Farm7.src = 'Farm7.mp3';
+Farm2.src = 'Farm2.mp3';
+Farm3.src = 'Farm3.mp3';
+Farm4.src = 'Farm4.mp3';
+Special.src = 'Special.mp3';
+var Farm1 = new Audio();
+Farm1.src = 'Farm1.mp3';
+var nani = new Audio();
+nani.src = 'UpgradeButton.mp3';
+
+	function adaugaresuma(){
+		bani= bani + bPS;
+		if(repetare==0){
+		Farm1.play();
+	};
+
+		if(repetare==1){
+			Farm2.play();
+		};
+		if(repetare==2){
+		Farm3.play();
+		};
+		if(repetare==3){
+		Farm4.play();
+		};
+		if(repetare==4){
+		Farm5.play();
+		};
+		if(repetare==5){
+		Farm6.play();
+		};
+		if(repetare==6){
+		Farm7.play();
+		repetare=0;}
+		else{
+		repetare=repetare+1;};
+		
+		
+	
+		
+};
+function haifha(){
+if(bani>=3700){
+nani.play();
+bani=bani-3700;
+bPS=bPS+16;}
+};
+var myVar = setInterval(functie, 200)
+	function functie(){
+		document.getElementById("money").innerHTML = bani;};
+		
+</script>
+
+
+	</body>
+</html>
